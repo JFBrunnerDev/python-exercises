@@ -1,13 +1,3 @@
-transactions = [
-    ("Alice", 120, "food"),
-    ("Bob", 45, "tech"),
-    ("Alice", 30, "tech"),
-    ("Charlie", 200, "food"),
-    ("Bob", 15, "food"),
-    ("Alice", 90, "food"),
-    ("Charlie", 60, "tech"),
-]
-
 from collections import defaultdict
 
 def filtering(method):
@@ -24,4 +14,14 @@ def filtering(method):
         
     return result
 
-print(filtering(transactions))
+if __name__=="__main__":
+    transactions = [
+        ("Alice", 120, "food"),
+        ("Bob", 45, "tech"),
+        ("Alice", 30, "tech"),
+        ("Charlie", 200, "food"),
+        ("Bob", 15, "food"),
+        ("Alice", 90, "food"),
+        ("Charlie", 60, "tech"),
+    ]
+    print(filtering(transactions))
